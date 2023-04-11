@@ -1,1 +1,0 @@
-![](./image/chall1.png)
