@@ -3,7 +3,7 @@
 ## array-binary-search
 ---
 # Whiteboard Process
-![](./image/chall3.jpg)
+![](../image/chall3.jpg)
 
 # Approach & Efficiency
 The time complexity of the BinarySearch function is O(log n), where n is the length of the input array. This is because the algorithm divides the search space in half with each iteration, so the number of iterations required is logarithmic in the size of the input. This is much faster than a linear search, which would have a worst-case time complexity of O(n).
