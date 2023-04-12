@@ -6,5 +6,5 @@
 |   code challenge 1   |   [link](./challenges/challenge1/challenge1.md)   |
 |   code challenge 2   |   [link](./challenges/challenge2/challenge2.md)   |
 |   code challenge 3   |   [link](./challenges/challenge3/challenge3.md)   |
-
+|   code challenge 4   |   [link](./challenges/challenge4/challenge4.md)   |
  
