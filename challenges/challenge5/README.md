@@ -1,6 +1,7 @@
 # Challenge Title
 ##  Implementation: Singly Linked Lists
-
+# Whiteboard Process
+![](../image/chall5.jpg)
 ## Setup
 req.txt to install the requred
 
