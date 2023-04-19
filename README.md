@@ -9,4 +9,6 @@
 |   code challenge 4   |   [link](./challenges/challenge4/challenge4.md)   |
 |   code challenge 5   |   [link](./challenges/link_list/challenge5/linklist/README.md)       |
 |   code challenge 6   |   [link](./challenges/link_list/challenge6/linklist/README.md)       |
+|   code challenge 7   |   [link](./challenges/link_list/challenge7/linklist/README.md)       |
+
  
