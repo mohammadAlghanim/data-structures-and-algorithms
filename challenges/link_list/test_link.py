@@ -2,6 +2,7 @@ import pytest
 from link_list.challenge5.linklist.linked_list import Linklist
 from link_list.challenge6.linklist.linked_list import Linklist
 from link_list.challenge7.linklist.linked_list import Linklist
+from link_list.challenge8.linklist.linked_list import Linklist
 
 
 
@@ -85,6 +86,72 @@ def test_16(ll):
 
 
 
+"""
+“Happy Path” where both of the linked lists have the same length
+"""
+def test_16():
+    ll=Linklist()
+    ll.append("a")
+    ll.append("b")
+    ll.append("c") 
+    ll2=Linklist()
+    ll2.append("1")
+    ll2.append("2")
+    ll2.append("3") 
+    excepted="a -->1 -->b -->2 -->c -->3 --> None"
+    actual=str(ll.zip_list(ll,ll2))
+    assert actual == excepted 
+"""
+“Happy Path” where the first linked list is shorter
+"""
+def test_17():
+    ll=Linklist()
+    ll.append("a")
+    ll.append("b")
+    ll2=Linklist()
+    ll2.append("1")
+    ll2.append("2")
+    ll2.append("3") 
+    excepted="a -->1 -->b -->2 -->3 --> None"
+    actual=str(ll.zip_list(ll,ll2))
+    assert actual == excepted   
+"""
+“Happy Path” where the second linked list is shorter
+"""
+def test_18():
+    ll=Linklist()
+    ll.append("a")
+    ll.append("b")
+    ll.append("c") 
+    ll2=Linklist()
+    ll2.append("1")
+    ll2.append("2")
+    excepted="a -->1 -->b -->2 -->c --> None"
+    actual=str(ll.zip_list(ll,ll2))
+    assert actual == excepted     
+"""
+“edge case 1” where the first linked list is empty 
+"""
+def test_19():
+    ll=Linklist()
+    ll.append("a")
+    ll.append("b")
+    ll.append("c") 
+    ll2=Linklist()
+    excepted="a -->b -->c --> None"
+    actual=str(ll.zip_list(ll,ll2))
+    assert actual == excepted
+"""
+“edge case 2” where the second linked list is empty 
+"""
+def test_20():
+    ll=Linklist() 
+    ll2=Linklist()
+    ll2.append("1")
+    ll2.append("2")
+    excepted="1 -->2 --> None"
+    actual=str(ll.zip_list(ll,ll2))
+    assert actual == excepted   
 
  
 
