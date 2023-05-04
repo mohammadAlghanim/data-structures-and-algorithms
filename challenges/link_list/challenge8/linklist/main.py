@@ -24,6 +24,9 @@ if __name__ == "__main__":
     listb.append(10)
     listb.append(11)
     listb.append(12)
+    listb.reverse_linked_list()
+    print(listb)
+
 
 
     # print(listb)
