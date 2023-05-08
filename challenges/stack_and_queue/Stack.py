@@ -31,6 +31,7 @@ class Stack:
         node = Node(value)
         if self.top:
             node.next = self.top
+            # self.top = node.next
         self.top= node
         self.size += 1
     def __str__(self):
@@ -66,6 +67,6 @@ class Stack:
         return self.size
     def is_empty(self):
         if self.size == 0:
-            return False
-        else:
             return True
+        else:
+            return False
