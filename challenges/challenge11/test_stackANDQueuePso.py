@@ -1,5 +1,5 @@
 import pytest
-from challenge11.stackQueuePseudo import Pseudo_queue
+from challenges.challenge11.stackQueuePseudo import Pseudo_queue
 
 def test_PS_1 (AA):
     assert AA.dequeue() == 'A'

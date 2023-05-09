@@ -12,5 +12,7 @@
 |   code challenge 7   |   [link](./challenges/link_list/challenge7/linklist/README.md)       |
 |   code challenge 8   |   [link](./challenges/link_list/challenge8/linklist/README.md)       |
 |   code challenge 10   |   [link](./challenges/stack_and_queue/README.md)       |
+|   code challenge 11   |   [link](./challenges/challenge11/README.md)       |
+|   code challenge 12   |   [link](./challenges/challenge12/README.md)       |
 
  

@@ -1,6 +1,6 @@
 import pytest
-from stack_and_queue.Stack import Stack
-from stack_and_queue.Queue import Queue
+from challenges.stack_and_queue.Stack import Stack
+from challenges.stack_and_queue.Queue import Queue
 # challenges/stack_and_queue/Queue.py
 def test_queue1():
     queue = Queue()

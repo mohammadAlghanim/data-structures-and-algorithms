@@ -1,8 +1,8 @@
 import pytest
-from link_list.challenge5.linklist.linked_list import Linklist
-from link_list.challenge6.linklist.linked_list import Linklist
-from link_list.challenge7.linklist.linked_list import Linklist
-from link_list.challenge8.linklist.linked_list import Linklist
+from challenges.link_list.challenge5.linklist.linked_list import Linklist
+from challenges.link_list.challenge6.linklist.linked_list import Linklist
+from challenges.link_list.challenge7.linklist.linked_list import Linklist
+from challenges.link_list.challenge8.linklist.linked_list import Linklist
 
 
 
