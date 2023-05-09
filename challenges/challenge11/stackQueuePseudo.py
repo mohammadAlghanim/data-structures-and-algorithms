@@ -1,4 +1,4 @@
-from stack_and_queue.Stack import Stack
+from challenges.stack_and_queue.Stack import Stack
 
 class Pseudo_queue:
     """
