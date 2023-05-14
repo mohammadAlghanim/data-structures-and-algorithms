@@ -14,5 +14,6 @@
 |   code challenge 10   |   [link](./challenges/stack_and_queue/README.md)       |
 |   code challenge 11   |   [link](./challenges/challenge11/README.md)       |
 |   code challenge 12   |   [link](./challenges/challenge12/README.md)       |
+|   code challenge 13   |   [link](./challenges/challenge13/README.md)       |
 
  
