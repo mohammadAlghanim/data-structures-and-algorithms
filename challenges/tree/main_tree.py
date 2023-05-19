@@ -28,7 +28,9 @@ class Tree:
             A list containing the values of the tree nodes visited in pre-order.
 
     """
-    def pre_order(self, root,list =[]):
+    def pre_order(self, root,list=None):
+        if list == None:
+            list = []
         if root is not None:
             # print(root.value)
             list.append(root.value)
@@ -49,7 +51,9 @@ class Tree:
             A list containing the values of the tree nodes visited in in-order.
 
     """
-    def in_order(self,root,list =[]):
+    def in_order(self,root,list =None):
+        if list == None:
+            list = []
         if root.left is not None:
           self.in_order(root.left,list)
         if root is not None:
@@ -72,7 +76,9 @@ class Tree:
             A list containing the values of the tree nodes visited in post-order.
 
     """
-    def post_order(self,root,list=[]):
+    def post_order(self,root,list=None):
+        if list == None:
+            list = []
 
         if root is not None:
             # print(root.value)
@@ -80,27 +86,20 @@ class Tree:
             self.post_order(root.right,list)
             list.append(root.value)
         return list
-
-
-
-
-
-# node1 = Node("A")
-# node1.left = Node("B")
-# node1.right = Node("C")
-# node1.left.left = Node("D")
-# node1.left.right = Node("E")
-# node1.right.left = Node("k")
-# node1.right.right = Node("g")
-# tree = Tree()
-# print(tree.pre_order(node1))
-# # tree.pre_order(tree.root)
-# print(tree.in_order(node1))
-# print(tree.post_order(node1))
-#############################################
+###########
 class Binary_Search_Tree(Tree):
     def __init__(self):
         super().__init__()
+    def contains(self,root,value):
+        if root is None:
+            return False
+
+        if value == root.value:
+            return True
+        elif value < root.value:
+            return self.contains(root.left, value)
+        else:
+            return self.contains(root.right, value)
     """
         Adds a new node with the given value to the binary search tree.
 
@@ -131,28 +130,29 @@ class Binary_Search_Tree(Tree):
                     self.add_binary_search(root.right,value)
         
 
-
-node1 = Node("A")
-node1.left = Node("B")
-node1.right = Node("C")
-node1.left.left = Node("D")
-node1.left.right = Node("E")
-node1.right.left = Node("k")
-node1.right.right = Node("g")
-tree = Tree()
-# # binry = Binary_Search_Tree()
-print(tree.pre_order(node1,list=[]))
-# tree.pre_order(tree.root,list=[])
-# print(tree.in_order(node1))
-# print(tree.post_order(node1))
-# # binry.add_binary_search(node1)
-bst = Binary_Search_Tree()
-bst.add_binary_search(bst.root,5)
-bst.add_binary_search(bst.root,3)
-bst.add_binary_search(bst.root,7)
-bst.add_binary_search(bst.root,2)
-bst.add_binary_search(bst.root,4)
-print(bst.pre_order(bst.root,list= []))
+if __name__ == "__main__":
+    node1 = Node("A")
+    node1.left = Node("B")
+    node1.right = Node("C")
+    node1.left.left = Node("D")
+    node1.left.right = Node("E")
+    node1.right.left = Node("k")
+    node1.right.right = Node("g")
+    tree = Tree()
+    # # binry = Binary_Search_Tree()
+    # print(tree.pre_order(node1,list=[]))
+    # tree.pre_order(tree.root,list=[])
+    # print(tree.in_order(node1))
+    print(tree.post_order(node1))
+    # # binry.add_binary_search(node1)
+    bst = Binary_Search_Tree()
+    bst.add_binary_search(bst.root,5)
+    bst.add_binary_search(bst.root,3)
+    bst.add_binary_search(bst.root,7)
+    bst.add_binary_search(bst.root,2)
+    bst.add_binary_search(bst.root,4)
+    print(bst.pre_order(bst.root,list= []))
+    print(bst.contains(bst.root,9))
 
 
 

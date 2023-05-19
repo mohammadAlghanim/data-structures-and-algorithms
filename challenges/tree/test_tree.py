@@ -12,7 +12,7 @@ def test_Binary_Search_Tree():
     bst.add_binary_search(bst.root,4)
     
     # Perform post_order traversal
-    result1 = bst.pre_order(bst.root,list =[])
+    result1 = bst.pre_order(bst.root)
 
     # Define the expected result
     expected2 = [5, 3, 2, 4, 7]
@@ -76,3 +76,21 @@ def test_post_order():
 
     # Compare the expected result with the actual result
     assert expected == result
+def test_contains():
+    # Create the tree and build its structure
+    bst = Binary_Search_Tree()
+    bst.add_binary_search(bst.root,5)
+    bst.add_binary_search(bst.root,3)
+    bst.add_binary_search(bst.root,7)
+    bst.add_binary_search(bst.root,2)
+    bst.add_binary_search(bst.root,4)
+    
+    # Perform post_order traversal
+    result1 = bst.contains(bst.root,3)
+    result2 = bst.contains(bst.root,9)
+
+    # Define the expected result
+    expected1 = True
+    expected2 = False
+    assert expected1 == result1
+    assert expected2 == result2

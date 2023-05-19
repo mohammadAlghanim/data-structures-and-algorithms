@@ -2,8 +2,11 @@
 ##  Implementation:Implementation: Trees
 # Whiteboard Process
 ![](../../challenges/image/chall15.jpg)
+![](../../challenges/image/chall_15.jpg)
+![](../../challenges/image/chall15_.jpg)
+![](../../challenges/image/chall15__.jpg)
 ## Setup
-req.txt to install the requred
+requirement.txt to install the requred
 
 
 ### to test code 
