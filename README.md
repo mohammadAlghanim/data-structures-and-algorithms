@@ -16,5 +16,6 @@
 |   code challenge 12   |   [link](./challenges/challenge12/README.md)       |
 |   code challenge 13   |   [link](./challenges/challenge13/README.md)       |
 |   code challenge 15   |   [link](./challenges/tree/README.md)       |
+|   code challenge 15   |   [link](./challenges/max_tree/README.md)       |
 
  
