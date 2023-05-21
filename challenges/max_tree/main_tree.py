@@ -86,6 +86,43 @@ class Tree:
             self.post_order(root.right,list)
             list.append(root.value)
         return list
+    
+
+    def find_maximum_value(self):
+        """
+        Finds the maximum value stored in the binary tree.
+
+        Returns:
+            The maximum value stored in the binary tree, or None if the tree is empty.
+        """
+        if self.root is None:
+            return None
+
+        return self.max_tree(self.root)
+    def max_tree(self, root):
+       """
+        Recursive helper method to find the maximum value in a binary tree.
+
+        Args:
+            root (Node): The root node of the binary tree.
+
+        Returns:
+            The maximum value in the binary tree, or None if the tree is empty.
+        """
+       if root is None:
+          return None
+
+       max_num = root.value
+
+       right_max = self.max_tree(root.right)
+       if right_max is not None and max_num < right_max:
+          max_num = right_max
+
+       left_max = self.max_tree(root.left)
+       if left_max is not None and max_num < left_max:
+          max_num = left_max
+
+       return max_num
 ###########
 class Binary_Search_Tree(Tree):
     def __init__(self):
@@ -131,19 +168,40 @@ class Binary_Search_Tree(Tree):
         
 
 if __name__ == "__main__":
-    node1 = Node("A")
-    node1.left = Node("B")
-    node1.right = Node("C")
-    node1.left.left = Node("D")
-    node1.left.right = Node("E")
-    node1.right.left = Node("k")
-    node1.right.right = Node("g")
-    tree = Tree()
+    # node1 = Node("A")
+    # node1.left = Node("B")
+    # node1.right = Node("C")
+    # node1.left.left = Node("D")
+    # node1.left.right = Node("E")
+    # node1.right.left = Node("k")
+    # node1.right.right = Node("g")
+    # tree = Tree()
+    tree1 = Tree()
+
+    node1 = Node(5)
+    tree1.root = node1
+
+    node2 = Node(4)
+    tree1.root.left = node2
+
+    node3 = Node(9)
+    tree1.root.right = node3
+
+    node4 = Node(12)
+    tree1.root.left.left = node4
+
+    node5 = Node(6)
+    tree1.root.left.right = node5
+
+    node6 = Node(15)
+    tree1.root.right.left = node6
+    print(tree1.find_maximum_value())
+
     # # binry = Binary_Search_Tree()
     # print(tree.pre_order(node1,list=[]))
     # tree.pre_order(tree.root,list=[])
     # print(tree.in_order(node1))
-    print(tree.post_order(node1))
+    # print(tree.post_order(node1))
     # # binry.add_binary_search(node1)
     bst = Binary_Search_Tree()
     bst.add_binary_search(bst.root,5)
@@ -151,8 +209,10 @@ if __name__ == "__main__":
     bst.add_binary_search(bst.root,7)
     bst.add_binary_search(bst.root,2)
     bst.add_binary_search(bst.root,4)
-    print(bst.pre_order(bst.root))
-    print(bst.contains(bst.root,9))
+    print(bst.find_maximum_value())
+
+    # print(bst.pre_order(bst.root))
+    # print(bst.contains(bst.root,9))
 
 
 
