@@ -61,6 +61,8 @@ class Queue:
             raise Exception("Empty")
             # return "empty"
         return self.front.value
+    def is_empty(self):
+        return self.front== None
 
 
 
