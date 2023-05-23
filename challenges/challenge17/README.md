@@ -13,6 +13,5 @@ install pytest to run the test
  ```
  ### to run a code 
  ```
-/home/mohammad/.pyenv/versions/3.10.7/bin/python /home/mohammad/data-structures-and-algorithms/chal
-lenges/challenge17/tree_breadth_first.py
+python -m challenges.challenge17.breadth_tree
  ```
