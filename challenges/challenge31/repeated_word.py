@@ -1,16 +1,15 @@
 
-def first_repeated_word(words):
+def first_repeated_word(str):
     """
     A function that takes string as argument and returns the first repeated word 
     or returns "No Repetition" if there is no repeated word...
     """
-    rep = set()
-    for word in words.split():
-        if word in rep:
+    hash_map = {}
+    for word in str.split():
+        if word.lower() in hash_map:
             return word
         else:
-            rep.add(word)
-    return 'No Repetition'
+            hash_map[word.lower()] = True
 
 
 if __name__ == '__main__':
