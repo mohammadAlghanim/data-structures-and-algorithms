@@ -1,6 +1,6 @@
 # hashmap-left-join
 # Whiteboard 
-![](../../challenges/image/chall34.jpg)
+![](../../challenges/image/chall33.jpg)
 ## Approach & Efficiency
 ### The time complexity of this function is O(m), where m is the number of words until reaching the repeated word.
 ### The space complexity of this function is O(m), where m is the number of words until reaching the repeated word.
