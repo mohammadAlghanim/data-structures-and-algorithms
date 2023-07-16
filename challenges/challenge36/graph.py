@@ -1,4 +1,5 @@
 from Node import Node
+from Queue import Queue
 
 class Edge:
     def __init__(self, vertex, weight=0):
@@ -94,6 +95,28 @@ class Graph:
         """
         return len(self.adj_list)
 
+    def breadth_first(self, root):
+        '''
+        A method that takes a value as an argument, then traverses through the graph using Breadth-First way starting from the inputted value,
+        and appends all the visited nodes' values in a returned array.
+        '''
+        nodes = []
+        breadth = Queue()
+        visited = set()
+
+        breadth.enqueue(root)
+        visited.add(root)
+
+        while not breadth.is_empty():
+            front = breadth.dequeue()
+            nodes.append(front.value)
+
+            for edge in self.adj_list[front]:
+                if edge.vertex not in visited:
+                    breadth.enqueue(edge.vertex)
+                    visited.add(edge.vertex)
+
+        return nodes
     def __str__(self):
         """
         Return a string representation of the Graph object.
@@ -105,4 +128,5 @@ class Graph:
                 output += f'{edge.vertex} -----> '
             output += '\n'
         return output
+    
     

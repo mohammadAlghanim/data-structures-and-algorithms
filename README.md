@@ -26,4 +26,5 @@
 |   code challenge 32   |   [link](./challenges/challenge32/README.md)       |
 |   code challenge 33   |   [link](./challenges/challenge33/README.md)       |
 |   code challenge 35   |   [link](./challenges/challenge35/README.md)       |
+|   code challenge 36   |   [link](./challenges/challenge36/README.md)       |
  
