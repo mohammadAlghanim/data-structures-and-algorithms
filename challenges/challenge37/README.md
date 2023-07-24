@@ -1,4 +1,4 @@
-# Graphs_breadth_first
+# Graphs_business_trip
 # Whiteboard 
 ![](../../challenges/image/chall37.jpg)
 ## Approach & Efficiency
